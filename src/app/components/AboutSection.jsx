@@ -110,7 +110,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I am a Computer Science student and Full Stack Developer with expertise in building AI-integrated web applications and algorithmic trading systems. 
-          My passion lies at the intersection of machine learning and software development, where I've built PyTorch-powered solutions for personalized workout recommendations and LSTM models for financial trading algorithms. 
+          My passion lies at the intersection of machine learning and software development, where I&apos;ve built PyTorch-powered solutions for personalized workout recommendations and LSTM models for financial trading algorithms. 
           Currently pursuing a double major in Computer Science and Mathematics at NUS, I complement my academic pursuits with practical applications in quantitative finance and web development. I am eager to leverage my diverse skill set to solve complex technical challenges and create innovative solutions that deliver measurable impact.
           </p>
           <div className="flex flex-row justify-start mt-8">
