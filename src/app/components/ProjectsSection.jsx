@@ -7,44 +7,44 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "ML-based Workout Recommendation System",
+    description: "A mobile application that uses machine learning to recommend personalized workout routines based on user preferences and fitness goals.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
+    id: 2,
+    title: "Avellanda-Stoikov Market Making System",
+    description: "A self-hosted market making system for cryptocurrencies based on the paper by Avellanda and Stoikov.",
+    image: "/images/projects/2.png",
+    tag: ["All", "Misc"],
+    gitUrl: "/", // Put in the paper link
+    previewUrl: "/",
+  },
+  {
+    id: 3,
+    title: "Ray Tracer",
+    description: "Developed a path tracer using C++, focusing on indirect lighting for high-quality images without external APIs.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Misc"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "E-Commerce Store",
+    description: "An online store built with Next.js and FastAPI for Muhammadiyah Welfare Home. Allowing for in-store credits, auctions and store management.",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Portfolio Managment System",
+    description: "A web application built with Flask and IBKR API for automated managing portfolios and investments of multiple IBKR accounts with portfolio rebalancing and risk management.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -52,8 +52,8 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Friendly Betting System",
+    description: "A web application built with Next.js and FastAPI for creating and managing friendly betting pools.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -99,6 +99,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Misc"
+          isSelected={tag === "Misc"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
